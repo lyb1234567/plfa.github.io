@@ -589,6 +589,7 @@ data Type : Set where
   _⇒_   : Type → Type → Type
   Nat   : Type
   _`×_  : Type → Type → Type
+  _`⊎_  : Type → Type → Type
 ```
 
 ### Contexts
@@ -684,6 +685,7 @@ data _⊢_ : Context → Type → Set where
     → Γ , A ⊢ B
       ----------
     → Γ ⊢ B
+
 
   -- products
 

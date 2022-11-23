@@ -415,6 +415,10 @@ which will be useful in making sure an index is within context bounds:
 length : Context → ℕ
 length ∅        =  zero
 length (Γ , _)  =  suc (length Γ)
+
+A : Context
+A = ∅ , `ℕ ⇒ `ℕ , `ℕ
+
 ```
 
 We can use a natural number to select a type from a context:
@@ -490,7 +494,7 @@ plusᶜ : ∀ {Γ A} → Γ ⊢ Ch A ⇒ Ch A ⇒ Ch A
 plusᶜ = ƛ ƛ ƛ ƛ (# 3 · # 1 · (# 2 · # 1 · # 0))
 
 sucᶜ : ∀ {Γ} → Γ ⊢ `ℕ ⇒ `ℕ
-sucᶜ = ƛ `suc (# 0)
+sucᶜ = ƛ `suc # 0
 
 2+2ᶜ : ∀ {Γ} → Γ ⊢ `ℕ
 2+2ᶜ = plusᶜ · twoᶜ · twoᶜ · sucᶜ · `zero
@@ -1367,6 +1371,7 @@ number of lines of code is as follows:
 The relation between the two approaches approximates the
 golden ratio: extrinsically-typed terms
 require about 1.6 times as much code as intrinsically-typed.
+
 
 ## Unicode
 
