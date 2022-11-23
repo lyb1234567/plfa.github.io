@@ -1,6 +1,8 @@
 ---
 title     : "Exam: TSPL Exam file"
 permalink : /TSPL/2022/Exam/
+Name : Yanbo Liu
+Email : s2307574@ed.ac.uk
 ---
 
 
@@ -874,7 +876,7 @@ module Problem3 where
   ...    | yes ⊢M with inherit (Γ , x ⦂ `ℕ) N A
   ...       | no ¬⊢N          =  no  (λ{ (⊢case _ _ ⊢N) → ¬⊢N ⊢N })
   ...       | yes ⊢N          =  yes (⊢case ⊢L ⊢M ⊢N)
-  
+
   inherit Γ (μ x ⇒ N) A with inherit (Γ , x ⦂ A) N A
   ... | no ¬⊢N                =  no  (λ{ (⊢μ ⊢N) → ¬⊢N ⊢N })
   ... | yes ⊢N                =  yes (⊢μ ⊢N)
