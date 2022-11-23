@@ -1,11 +1,11 @@
 ---
 title     : "Exam: TSPL Exam file"
 permalink : /TSPL/2022/Exam/
-Name : Yanbo Liu
-Email : s2307574@ed.ac.uk
 ---
 
-
+## YOUR NAME AND EMAIL GOES HERE
+Name : Yanbo Liu
+Email : s2307574@ed.ac.uk
 ```agda
 module Exam where
 ```
